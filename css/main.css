@@ -1,8 +1,10 @@
+
 body {
 	display: grid;
 	grid-template-areas: 'hd hd hd hd' 'mn mn mn mn' 'mn mn mn mn' 'ft ft ft ft';
 	font-family: Cabin;
 	width: 100%;
+	height: 100%;
 	margin: auto;
 
 }
@@ -10,7 +12,8 @@ body {
 nav {
 	flex: 1;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	padding-top: 50px;
 	/*	background: red;*/
 }
 
@@ -116,6 +119,7 @@ footer {
 p {
 	color: white;
 	font-family: Basic;
+
 }
 
 #description {
@@ -125,12 +129,8 @@ p {
 
 .banner-sty {
 
-
 	width: 400px;
 	height: 240px;
-
-
-
 	border-radius: 8px;
 }
 
@@ -138,8 +138,6 @@ section {
 	flex: 1;
 	display: flex;
 	flex-direction: row;
-
-	/*	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
 	max-width: 1000px;
 	width: 100%;
 	margin: auto;
@@ -188,12 +186,12 @@ section {
 }
 
 
-.home-btn {
+.menu-btn {
 	text-decoration-line: none;
 	color: white;
 	font-size: 15px;
-	font-family: Basic;
-	margin-left: 5px;
+	font-family: 'Cabin';
+	margin: 8px;
 
 }
 
@@ -209,14 +207,34 @@ a:hover {
 }
 
 .social-box {
-	flex: 0.7;
+	/* flex: 0.7; */
 	display: flex;
 	flex-direction: column;
+	/* justify-content: flex-start; */
+	/* align-items: center; */
 
 }
 
 .social-box i {
+	display: flex;
 	margin: 8px;
+	/* justify-content: center; */
+	align-items: center;
+	/* background-color: red; */
+	
+}
+
+/* .social-box a {
+	background-color: blue;
+	margin-left: 10px;
+	
+
+} */
+.sub-social-box {
+	/* background-color: aliceblue; */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 #icon-github:hover,
@@ -260,8 +278,6 @@ a:hover {
 	display: inline;
 	position: relative;
 	margin: 30px 0px;
-	width: 160px;
-	height: 54px;
 	/*	margin: 10px;*/
 	/*	background: blue;*/
 }
@@ -286,9 +302,10 @@ a:hover {
 
 .app-title {
 	color: rgba(53, 59, 72, 1);
-	font-size: 15px;
+	font-family: 'Cabin';
+	font-size: 12px;
 	width: 360px;
-	height: 80px;
+	height: 50px;
 	/*	padding: 0px 20px;*/
 	/*	 background: blue;*/
 }
@@ -303,6 +320,20 @@ a:hover {
 	height: 100%;
 
 }
+.line {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin: auto;
+	border-style: inset;
+	border-width: 10px;
+}
+
+.menu-icons {
+	font-size:24px;
+	color: white;
+}
+
 
 @media screen and (max-width: 700px) {
 	#profile {
@@ -329,7 +360,6 @@ a:hover {
 		height: 100px;
 	}
 	section {
-		//background: blue;
 		flex-direction: column;
 	}
 
